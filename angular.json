@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "49233dce-9a07-46af-a8f6-49a9dc89fe2c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -28,9 +31,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "G:/projects/mmf-angular-firebase/mmf-angular-firebase/node_modules/font-awesome/css/font-awesome.css",
+              "G:/projects/mmf-angular-firebase/mmf-angular-firebase/node_modules/materialize-css/dist/css/materialize.css"
             ],
-            "scripts": []
+            "scripts": [
+              "G:/projects/mmf-angular-firebase/mmf-angular-firebase/node_modules/jquery/dist/jquery.js",
+              "G:/projects/mmf-angular-firebase/mmf-angular-firebase/node_modules/materialize-css/dist/js/materialize.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,6 +128,10 @@
               "devServerTarget": "mff-angular-firebase:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

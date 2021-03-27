@@ -1,0 +1,17 @@
+<div *ngIf="items.length > 0; else noItems">
+<ul *ngFor="let item of items" class="collection">
+  <li class="collection-item">store name : {{item.store_name}}</li>
+  <li class="collection-item">cuisine : {{item.cuisine}}</li>
+  <li class="collection-item"><img src={{item.store_image}} width="40%" height="30%"></li>
+  <li class="collection-item"> description : {{item.store_description}}</li>
+  <li class="collection-item">address : {{item.store_address}}</li>
+
+</ul>
+<br>
+</div>
+<ng-template #noItems>
+  <hr>
+  <h5>
+    There are no items to list
+  </h5>
+</ng-template>

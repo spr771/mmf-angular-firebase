@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mmf-angular-firebase": {
+      "hosting": {
+        "mff-angular-firebase": [
+          "mmf-angular-firebase"
+        ]
+      }
+    }
+  }
+}
