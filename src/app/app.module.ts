@@ -8,18 +8,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './components/items/items.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { MatSliderModule } from '@angular/material/slider';
+import { HeaderComponent } from './components/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
     ItemsComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase,'mff-angular-firebase'),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    MatSliderModule,
   ],
   providers: [ItemService],
   bootstrap: [AppComponent]
