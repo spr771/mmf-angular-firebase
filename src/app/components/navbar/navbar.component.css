@@ -1,0 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.space{
+  width: 50px;
+}
+button{
+  color:blue;background-color: transparent;box-shadow: transparent;
+}
