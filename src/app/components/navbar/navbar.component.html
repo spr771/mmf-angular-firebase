@@ -1,16 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
 
-    <button mat-button [matMenuTriggerFor]="belowmenu">Menu</button>
-<mat-menu #belowmenu="matMenu" yPosition="below">
-  <button mat-menu-item>Favorites</button>
-  <button mat-menu-item>Speacial Meals</button>
-  <button mat-menu-item>Food Calender</button>
-  <button mat-menu-item>Reviews</button>
-  <button mat-menu-item>Notification</button>
-</mat-menu>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown01">
+  <a class="dropdown-item" href="#" style="color: black;">Favorites</a>
+  <br>
+  <a class="dropdown-item" href="#" style="color: black;">Speacial Meals</a>
+  <br>
+  <a class="dropdown-item" href="#" style="color: black;">Food Calender</a>
+  <br>
+  <a class="dropdown-item" href="#" style="color: black;">Reviews</a>
+  <br>
+  <a class="dropdown-item" href="#" style="color: black;">Notification</a>
+  </div>
+  </li>
 
-    <a class="navbar-brand" href="#">My Food Fair</a>
+    <div style="color: crimson;">My Food Fair</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,6 +39,13 @@
       </ul>
     </div>
   </div>
+
+  <!-- <button mat-button [matMenuTriggerFor]="belowMenu">Languages</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Indian</button>
+  <button mat-menu-item>Indoneshian</button>
+</mat-menu> -->
+
 </nav>
  
 <br>

@@ -1,36 +1,41 @@
 <div class="container">
 <h1>Sign Up</h1>
 <form Submit="submit(login)">
-    <div class="form group">
-        <label for="firstname">First Name</label><br>
+    <div class="form_group">
+        <label for="firstname" style="font-size: 16px; color: black;">First Name</label><br>
         <input required minlength="8" maxlength="12" type="text" name="firstname" class="form-control" >
-        <div>First Name field is required</div>
+        <div style="color: crimson;">First Name field is required</div>
     </div>
-
-    <div class="form group">
-        <label for="lastname">Last Name</label><br>
+<br>
+<br>
+    <div class="form_group">
+        <label for="lastname" style="font-size: 16px; color: black;">Last Name</label><br>
         <input required minlength="8" maxlength="12" type="text" name="lastname" class="form-control">
-        <div>Last Name field is required</div>
+        <div style="color: crimson;">Last Name field is required</div>
     </div>
-
-    <div class="form group">
-        <label for="email">Email</label><br>
+<br>
+<br>
+    <div class="form_group">
+        <label for="email" style="font-size: 16px; color: black;">Email</label><br>
         <input required minlength="8" maxlength="12" type="text" name="Email" class="form-control">
-        <div>Invalid Email format</div>
+        <div style="color: crimson;">Invalid Email format</div>
     </div>
-
-    <div class="form group">
-        <label for="password">Password</label><br>
+<br>
+<br>
+    <div class="form_group">
+        <label for="password" style="font-size: 16px; color: black;">Password</label><br>
         <input required minlength="8" maxlength="12" type="text" name="password" class="form-control">
-        <div>Password must be contain at least of 6 characters,and consist of a letter and a number</div>
+        <div style="color: crimson;">Password must be contain at least of 6 characters,and consist of a letter and a number</div>
     </div>
-
-    <div class="form group">
-        <label for="confirm-password">Confirm Password</label><br>
+<br>
+<br>
+    <div class="form_group">
+        <label for="confirm-password" style="font-size: 1px; color: black;">Confirm Password</label><br>
         <input required minlength="8" maxlength="12" type="text" name="confirm-password" class="form-control">
-        <div>Password & Confirm Password should be Same</div>
+        <div style="color: crimson;">Password & Confirm Password should be Same</div>
     </div>
-
+<br>
+<br>
     <button class="btn btn-primary" type="submit">submit</button>
 
 </form>
