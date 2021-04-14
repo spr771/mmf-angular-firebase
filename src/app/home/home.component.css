@@ -1,0 +1,39 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+} */
+body{
+height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h1{
+    /* position: absolute;
+    top: 30%; */
+    font-size: x-large;
+    color: blue;
+}
+
+.Box{
+    width: 15%;
+    height: 5%;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px crimson solid;
+    align-items: center;
+    padding: 10px;
+}
+
+.Box > i{
+    font-size:medium;
+    color: black;
+}
+
+.Box > input{
+    flex: 1%;
+    height: 5%;
+}
