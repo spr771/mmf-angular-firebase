@@ -13,6 +13,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './login/login.component';
+import {MatMenuModule} from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
@@ -31,6 +32,7 @@ import { SignupComponent } from './signup/signup.component';
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
+    MatMenuModule,
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase,'mff-angular-firebase'),
     AngularFirestoreModule,
