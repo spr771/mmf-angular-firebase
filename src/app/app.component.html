@@ -1,6 +1,27 @@
-<app-navbar></app-navbar>
 
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="over" #sidenav closed position="start">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <a mat-icon-button (click)="sidenav.toggle()" href="#">
+        <mat-icon>menu</mat-icon>
+      </a>
+      My Food Fair
+      <span class="toolbar-spacer"></span>
+     <a href="">Home</a>
+     &nbsp;&nbsp;&nbsp;
 
-<!-- <router-outlet></router-outlet> -->
+     &nbsp;&nbsp;&nbsp;
+     <a href="login">Log In</a>
+      <span class="toolbar-spacer"></span>
 
-<app-footer></app-footer>
+    </mat-toolbar>
+    <div class="main-content">
+
+    </div>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

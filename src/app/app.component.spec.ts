@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -10,7 +11,8 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         MatToolbarModule,
-        MatIconModule
+        MatIconModule,
+        BrowserAnimationsModule
       ],
       declarations: [
         AppComponent
