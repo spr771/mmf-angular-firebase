@@ -22,6 +22,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import {MatCardModule} from '@angular/material/card';
+import { AddPreferenceComponent } from './add-preference/add-preference.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +34,13 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     FooterComponent,
     SignupComponent,
     SidenavComponent,
+    AddPreferenceComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
+    MatCardModule,
     MatMenuModule,
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase,'mff-angular-firebase'),
