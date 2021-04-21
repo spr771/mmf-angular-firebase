@@ -24,6 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatCardModule} from '@angular/material/card';
 import { AddPreferenceComponent } from './add-preference/add-preference.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { MyaddressComponent } from './myaddress/myaddress.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +38,9 @@ import { AddPreferenceComponent } from './add-preference/add-preference.componen
     SignupComponent,
     SidenavComponent,
     AddPreferenceComponent,
+    ChangepasswordComponent,
+    MyaddressComponent,
+    EditprofileComponent,
   ],
   imports: [
     BrowserModule,
