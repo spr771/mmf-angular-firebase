@@ -1,42 +1,12 @@
-<div class="container">
 <h1>Sign Up</h1>
-<form Submit="submit(login)">
-    <div class="form_group">
-        <label for="firstname" style="font-size: 16px; color: black;">First Name</label><br>
-        <input required minlength="8" maxlength="12" type="text" name="firstname" class="form-control" >
-        <div style="color: crimson;">First Name field is required</div>
-    </div>
-<br>
-<br>
-    <div class="form_group">
-        <label for="lastname" style="font-size: 16px; color: black;">Last Name</label><br>
-        <input required minlength="8" maxlength="12" type="text" name="lastname" class="form-control">
-        <div style="color: crimson;">Last Name field is required</div>
-    </div>
-<br>
-<br>
-    <div class="form_group">
-        <label for="email" style="font-size: 16px; color: black;">Email</label><br>
-        <input required minlength="8" maxlength="12" type="text" name="Email" class="form-control">
-        <div style="color: crimson;">Invalid Email format</div>
-    </div>
-<br>
-<br>
-    <div class="form_group">
-        <label for="password" style="font-size: 16px; color: black;">Password</label><br>
-        <input required minlength="8" maxlength="12" type="text" name="password" class="form-control">
-        <div style="color: crimson;">Password must be contain at least of 6 characters,and consist of a letter and a number</div>
-    </div>
-<br>
-<br>
-    <div class="form_group">
-        <label for="confirm_password" style="font-size: 1px; color: black;">Confirm Password</label><br>
-        <input required minlength="8" maxlength="12" type="text" name="confirm_password" class="form-control">
-        <div style="color: crimson;">Password & Confirm Password should be Same</div>
-    </div>
-<br>
-<br>
-    <button class="btn btn-primary" type="submit">submit</button>
-
-</form>
-</div>
+<h3>First Name</h3>
+<input type="text" #firstname>
+<h3>Last Name</h3>
+<input type="text" #lastname>
+<h3>email id</h3>
+<input type="text" #email>
+<h3>Password</h3>
+<input type="text" #password>
+<h3>Confirm password</h3>
+<input type="text">
+<button (click)="onsignup(firstname.value,lastname.value,email.value,password.value)">Sign Up</button>

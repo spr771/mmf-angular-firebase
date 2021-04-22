@@ -8,6 +8,7 @@ import { Observable, } from 'rxjs';
 export class ItemService {
   itemsCollection!: AngularFirestoreCollection<Item>;
   items!: Observable<any[]>;
+  profile:any
   constructor(public afs:AngularFirestore) {
     this.items=this.afs.collection('store_new').valueChanges({idField:'id'});
   }
@@ -16,6 +17,15 @@ export class ItemService {
   }
   writeData(key: string,value:string){
     this.afs.collection('store_new').doc(key).update({'store_name':value});
+  }
+  async createprofile(firstname:string,lastname:string,email:string){
+    await this.afs.collection('users').add({'firstname':firstname,'lastname':lastname,'email':email})
+  }
+  async findprofile(id:string){
+     this.afs.collection('users').doc(id).get().subscribe(profile=>{
+       this.profile=profile
+     })
+     return this.profile
   }
 }
 

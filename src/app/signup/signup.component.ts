@@ -1,4 +1,7 @@
+import { FirebaseauthService } from './../services/firebaseauth.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ItemService } from '../services/item.service';
 
 @Component({
   selector: 'app-signup',
@@ -6,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent  {
-
-  submit(login: any){
-    console.log("Form submitted",login)
+  constructor(public fba:FirebaseauthService,public router:Router,public db:ItemService){}
+  async onsignup(firstname:string,lastname:string,email:string,password:string){
+   await this.fba.signup(email,password)
+   await this.db.createprofile(firstname,lastname,email)
+   await this.router.navigate(["home"])
+    window.location.reload()
   }
-
 }

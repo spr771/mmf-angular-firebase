@@ -5,16 +5,17 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <a mat-icon-button (click)="sidenav.toggle()" href="#">
+      <button mat-icon-button (click)="sidenav.toggle()" >
         <mat-icon>menu</mat-icon>
-      </a>
+      </button>
       My Food Fair
       <span class="toolbar-spacer"></span>
      <a href="">Home</a>
      &nbsp;&nbsp;&nbsp;
 
      &nbsp;&nbsp;&nbsp;
-     <a href="login">Log In</a>
+     <a *ngIf="!isSignedIn" href="login">Log In</a>
+     <a *ngIf="isSignedIn" href="#" (click)="onlogout()">Log out</a>
       <span class="toolbar-spacer"></span>
 
     </mat-toolbar>

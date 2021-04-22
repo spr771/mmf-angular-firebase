@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseauthService } from '../services/firebaseauth.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  isSignedIn=false
+  username:any;
+  constructor(public fba:FirebaseauthService) { }
 
   ngOnInit(): void {
+    this.fba.localdataupdata()
+   if(this.fba.isLoggedin==true){
+     this.isSignedIn=true;
+     this.username=JSON.parse(localStorage.getItem('userdata')??'')
+
+   }
+   else{
+     this.isSignedIn=false
+   }
   }
 
 }

@@ -1,32 +1,7 @@
-<div class="container">
-    <h1>Login</h1>
-    <form Login="login(submit)">
-        <div class="form_group">
-            <label for="email" style="font-size: 16px; color: black;">Email</label><br>
-            <input required minlength="8" maxlength="12" type="text" name="email" class="form-control" >
-            <div style="color: crimson;">Email field is required</div>
-        </div>
-    <br>
-    <br>
-        <div class="form_group">
-            <label for="password" style="font-size: 16px; color: black;">Password</label><br>
-            <input required minlength="8" maxlength="12" type="text" name="password" class="form-control">
-            <div style="color: crimson;">Password must be contain at least of 6 characters,and consist of a letter and a number</div>
-        </div>
-    <br>
-    <br>
-        <button class="btn btn-primary" type="login">Login</button>
-    <br>
-    <br>
-    <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot password</a>
-    </div>
-    <br>
-    <br>
-    <div id="formFooter">
-        <a class="underlineHover" href="signup" style="color: chocolate;">New user? Register here</a>
-    </div>
-    <br>
-    <br>
-    </form>
-    </div>
+<h1>Log In</h1>
+<h2>email</h2>
+<input type="text" #email>
+<h2>password</h2>
+<input type="password" #password>
+<button  (click)="onlogin(email.value,password.value)">log in </button>
+<a href="signup">don't have account ? sign up</a>
