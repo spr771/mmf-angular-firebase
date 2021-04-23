@@ -12,7 +12,7 @@ export class SignupComponent  {
   constructor(public fba:FirebaseauthService,public router:Router,public db:ItemService){}
   async onsignup(firstname:string,lastname:string,email:string,password:string){
    await this.fba.signup(email,password)
-   await this.db.createprofile(firstname,lastname,email)
+   await this.db.createprofile(JSON.parse(localStorage.getItem('userdata')??'').uid,firstname,lastname,email)
    await this.router.navigate(["home"])
     window.location.reload()
   }
