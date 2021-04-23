@@ -27,14 +27,5 @@ export class ItemService {
      })
      return this.profile
   }
-  async createprofile(firstname:string,lastname:string,email:string){
-    await this.afs.collection('users').add({'firstname':firstname,'lastname':lastname,'email':email})
-  }
-  async findprofile(id:string){
-     this.afs.collection('users').doc(id).get().subscribe(profile=>{
-       this.profile=profile
-     })
-     return this.profile
-  }
 }
 
