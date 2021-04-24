@@ -1,7 +1,13 @@
-<h1>Log In</h1>
-<h2>email</h2>
-<input type="text" #email>
-<h2>password</h2>
-<input type="password" #password>
-<button  (click)="onlogin(email.value,password.value)">log in </button>
-<a href="signup">don't have account ? sign up</a>
+<h1 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: rgb(14, 151, 151)">Log In</h1>
+<h2 style="font-size: 16px; color: black;">Email</h2>
+<input required maxlength="12" minlength="8" type="text" class="form-control" #email>
+<h4 style="font-size: 14px; color: crimson;">Email field is required</h4>
+<br>
+<h2 style="font-size: 16px; color: black;">Password</h2>
+<input required maxlength="12" minlength="8" type="password" class="form-control" #password>
+<h4 style="font-size: 14px; color: crimson;">password field is required</h4>
+<br>
+<button  (click)="onlogin(email.value,password.value)" style="color: black; background-color: blue; font-size: 16px;">log in </button>
+<br>
+<br>
+<a href="signup" style="font-size: 14px; color: darkred;">don't have account ? sign up</a>

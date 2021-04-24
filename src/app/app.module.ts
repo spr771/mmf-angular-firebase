@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './components/items/items.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { google } from '@google/maps';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -27,6 +28,7 @@ import { AddPreferenceComponent } from './add-preference/add-preference.componen
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { MyaddressComponent } from './myaddress/myaddress.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,10 +53,14 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase,'mff-angular-firebase'),
     AngularFirestoreModule,
+    google,
     MatSliderModule,
     MatSelectModule,
     MatFormFieldModule,
     MatSidenavModule,
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyBvoxQolR2w9y5FIGuBePkIRu21DuglvWU'
+    }),
     BrowserAnimationsModule,
     MatListModule
 
