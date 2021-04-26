@@ -1,12 +1,27 @@
-
 h1{
-    /* position: absolute;
-    top: 30%; */
-    font-size: x-large;
-    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
 }
 
-form{
-    font-size: medium;
+h2{
+    font-size: 16px;
     color: black;
+}
+
+h4{
+    font-size: 14px;
+    color: crimson;
+
+}
+
+button{
+    color: black;
+    background-color: blue;
+    font-size: 16px;
+}
+
+a{
+    font-size: 14px;
+    color: darkred;
 }

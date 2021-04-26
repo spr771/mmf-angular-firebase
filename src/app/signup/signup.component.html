@@ -1,12 +1,25 @@
 <h1>Sign Up</h1>
-<h3>First Name</h3>
-<input type="text" #firstname>
-<h3>Last Name</h3>
-<input type="text" #lastname>
-<h3>email id</h3>
-<input type="text" #email>
-<h3>Password</h3>
-<input type="text" #password>
-<h3>Confirm password</h3>
-<input type="text">
+<br>
+<h2>First Name</h2>
+<input required maxlength="50" minlength="8" type="text" #firstname>
+<h4>First Name field required</h4>
+<br>
+<h2>Last Name</h2>
+<input required maxlength="50" minlength="8" type="text" #lastname>
+<h4>Last Name field required</h4>
+<br>
+<h2>email id</h2>
+<input required maxlength="50" minlength="8" type="text" #email>
+<h4>Email field required</h4>
+<br>
+<h2>Password</h2>
+<input required maxlength="50" minlength="8" type="text" #password>
+<h4>Password must be contain at least of 6 characters & consist of a letter & a number</h4>
+<br>
+<h2>Confirm password</h2>
+<input required maxlength="50" minlength="8" type="text">
+<h4>Password & Confirm Password should be the same</h4>
+<br>
 <button (click)="onsignup(firstname.value,lastname.value,email.value,password.value)">Sign Up</button>
+<br><br>
+<a href="login">Already have account?Login</a>
