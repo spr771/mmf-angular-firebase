@@ -1,25 +1,12 @@
-<h1 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: rgb(14, 151, 151)">Sign Up</h1>
-<h2 style="font-size: 16px; color: black;">First Name</h2>
-<input required maxlength="12" minlength="8" type="text" class="form-control" #firstname>
-<h4 style="font-size: 14px; color: crimson;">First Name field is required</h4>
-<br>
-<h2 style="font-size: 16px; color: black;">Last Name</h2>
-<input required maxlength="12" minlength="8" type="text" class="form-control" #lastname>
-<h4 style="font-size: 14px; color: crimson;">Last Name field is required</h4>
-<br>
-<h2 style="font-size: 16px; color: black;">Email id</h2>
-<input required maxlength="12" minlength="8" type="text" class="form-control" #email>
-<h4 style="font-size: 14px; color: crimson;">Email field is required</h4>
-<br>
-<h2 style="font-size: 16px; color: black;">Password</h2>
-<input required maxlength="12" minlength="8" type="text" class="form-control" #password>
-<h4 style="font-size: 14px; color: crimson;">Password must be contain at least of 6 characters,and consist of a letter and a number</h4>
-<br>
-<h2 style="font-size: 16px; color: black;">Confirm Password</h2>
-<input required maxlength="12" minlength="8" type="text" class="form-control">
-<h4 style="font-size: 14px; color: crimson;">Password & Confirm Password should be Same</h4>
-<br>
-<button (click)="onsignup(firstname.value,lastname.value,email.value,password.value)" style="color: black; background-color: blue; font-size: 16px;">Sign Up</button>
-<br>
-<br>
-<a href="login" style="font-size: 14px; color: darkred;">Already have account ? login</a>
+<h1>Sign Up</h1>
+<h3>First Name</h3>
+<input type="text" #firstname>
+<h3>Last Name</h3>
+<input type="text" #lastname>
+<h3>email id</h3>
+<input type="text" #email>
+<h3>Password</h3>
+<input type="text" #password>
+<h3>Confirm password</h3>
+<input type="text">
+<button (click)="onsignup(firstname.value,lastname.value,email.value,password.value)">Sign Up</button>
