@@ -10,6 +10,48 @@
 
   </div>
 <h1 *ngIf="isSignedIn">You are Logged In .Your Email Id is {{this.username.email}}</h1>
-<app-items></app-items>
+
+<ul>
+  <li *ngFor="let food of foods">
+    <a>
+      <img *ngIf="food.store_image!=null" src="{{food.store_image}}" alt="">
+      <img *ngIf="food.store_image==null" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=700%2C636" alt="">
+      <div class="content">
+        <div class="name">
+          {{food.store_name}}
+        </div>
+        <span class="favorite {{food.favorite?'':'not'}}">
+          ❤️
+        </span>
+        <star-rating 
+        [value]="food.stars" 
+        [totalstars]="5" 
+        checkedcolor="red" 
+        uncheckedcolor="black" 
+        size="18px" 
+        [readonly]="true">
+      </star-rating>
+      <div class="product-item-footer">
+        <div class="origins">
+        <span *ngFor="let origin of food.origin">
+          {{origin}}
+        </span>
+        </div>
+        <div class="cooktime">
+          <span>🕒</span>
+          {{food.cooktime}}
+        </div>
+      </div>
+      <div class="price">
+        <span>
+          {{food.price|currency}}
+        </span>
+      </div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<!-- <app-items></app-items> -->
 
 </body>

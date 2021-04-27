@@ -1,4 +1,6 @@
-<body><div *ngIf="items.length > 0; else noItems">
+<body>
+  
+  <div *ngIf="items.length > 0; else noItems">
 <ul *ngFor="let item of items" class="collection">
   <li class="collection-item">store id : {{item.id}}</li>
   <li class="collection-item">store name : {{item.store_name}}</li>

@@ -27,6 +27,7 @@ import { AddPreferenceComponent } from './add-preference/add-preference.componen
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { MyaddressComponent } from './myaddress/myaddress.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
+import {RatingModule} from 'ng-starrating';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,9 +57,8 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
     MatFormFieldModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-    MatListModule
-
-
+    MatListModule,
+    RatingModule
   ],
   providers: [ItemService],
   bootstrap: [AppComponent]
