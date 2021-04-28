@@ -12,9 +12,12 @@
 <h1 *ngIf="isSignedIn">You are Logged In .Your Email Id is {{this.username.email}}</h1>
 
 <ul>
+  <h1 *ngIf="isSignedIn!=null">Popular Resturent Nearby</h1>
+  <h1 *ngIf="isSignedIn==null">User Fevorite Resturent Nearby</h1>
+  <br>
   <li *ngFor="let food of foods">
     <a>
-      <img *ngIf="food.store_image!=null" src="{{food.store_image}}" alt="" style="background: violet;">
+      <img *ngIf="food.store_image!=null" src="{{food.store_image}}" alt="">
       <img *ngIf="food.store_image==null" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=700%2C636" alt="">
       <div class="content">
         <div class="name">
@@ -48,6 +51,10 @@
         <span>
           {{food.price|currency}}
         </span>
+      </div>
+      <div>
+        <a href="viewstore" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: rgb(14, 151, 151)">View Store</a>
+<span class="toolbar-spacer"></span>
       </div>
       </div>
     </a>

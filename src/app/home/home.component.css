@@ -18,15 +18,16 @@ ul{
 }
 
 li a{
-  height: 30rem;
+  height: 50rem;
   width: 30rem;
-  border: 1px solid whitesmoke;
+  border: 1px darkcyan;
   border-radius: 1rem;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   color: rebeccapurple;
+  border-style:solid;
 }
 
 li a:hover{

@@ -28,6 +28,7 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { MyaddressComponent } from './myaddress/myaddress.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
 import {RatingModule} from 'ng-starrating';
+import { ViewstoreComponent } from './viewstore/viewstore.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import {RatingModule} from 'ng-starrating';
     ChangepasswordComponent,
     MyaddressComponent,
     EditprofileComponent,
+    ViewstoreComponent,
   ],
   imports: [
     BrowserModule,

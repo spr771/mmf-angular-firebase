@@ -8,8 +8,18 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MyaddressComponent } from './myaddress/myaddress.component';
 import { SignupComponent } from './signup/signup.component';
+import { ViewstoreComponent } from './viewstore/viewstore.component';
 
-const routes: Routes = [{path:"login",component:LoginComponent},{path:"signup",component:SignupComponent},{path:"home",component:HomeComponent},{path:"Changepassword",component:ChangepasswordComponent},{path:"editprofile",component:EditprofileComponent},{path:"Myaddress",component:MyaddressComponent},{path:"AddPreference",component:AddPreferenceComponent},{ path: '**', component:HomeComponent  },{path:"",component:AppComponent}];
+const routes: Routes = [{path:"login",component:LoginComponent},
+{path:"signup",component:SignupComponent},
+{path:"home",component:HomeComponent},
+{path:"Changepassword",component:ChangepasswordComponent},
+{path:"editprofile",component:EditprofileComponent},
+{path:"Myaddress",component:MyaddressComponent},
+{path:"AddPreference",component:AddPreferenceComponent},
+{ path: '**', component:HomeComponent  },
+{path:"",component:AppComponent},
+{path:"",component:ViewstoreComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{
